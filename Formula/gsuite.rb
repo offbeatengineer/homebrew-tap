@@ -5,21 +5,21 @@
 class Gsuite < Formula
   desc "CLI for Google Workspace APIs (Gmail, Drive, Docs, Sheets, Calendar)"
   homepage "https://github.com/offbeatengineer/gsuite-cli"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/offbeatengineer/gsuite-cli/releases/download/v0.2.0/gsuite_0.2.0_darwin_amd64.tar.gz"
-      sha256 "369271043e2b38f58a0796c30937cefe6802f53597a0dd89814a00f64ccb8a28"
+      url "https://github.com/offbeatengineer/gsuite-cli/releases/download/v0.2.1/gsuite_0.2.1_darwin_amd64.tar.gz"
+      sha256 "0fa3d3d912423de3b8da203cae66bf1fefdf9012d551facc55064e443f752107"
 
       def install
         bin.install "gsuite"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/offbeatengineer/gsuite-cli/releases/download/v0.2.0/gsuite_0.2.0_darwin_arm64.tar.gz"
-      sha256 "0b3b971384b5bb3b05905be6f108a97868b4a3d191544a63aec5761008b77745"
+      url "https://github.com/offbeatengineer/gsuite-cli/releases/download/v0.2.1/gsuite_0.2.1_darwin_arm64.tar.gz"
+      sha256 "eb958af8a3ff00e83b57c37723463f4272f35b679b4cc2e0aa2af1a829148ddf"
 
       def install
         bin.install "gsuite"
@@ -29,15 +29,15 @@ class Gsuite < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/offbeatengineer/gsuite-cli/releases/download/v0.2.0/gsuite_0.2.0_linux_amd64.tar.gz"
-      sha256 "74505b90dd4ec9d068aeacf4577944dee08f09b70340a0bd494b1f0aeb007a06"
+      url "https://github.com/offbeatengineer/gsuite-cli/releases/download/v0.2.1/gsuite_0.2.1_linux_amd64.tar.gz"
+      sha256 "cce4c2970c725b621eecd2396e0715c6d2016bf4e548046511bfe96598ef1ba0"
       def install
         bin.install "gsuite"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/offbeatengineer/gsuite-cli/releases/download/v0.2.0/gsuite_0.2.0_linux_arm64.tar.gz"
-      sha256 "307cf6e430798643c8fc376ed46b8b00318d1d2ad066b0ef1ebeddf88cb6b95c"
+      url "https://github.com/offbeatengineer/gsuite-cli/releases/download/v0.2.1/gsuite_0.2.1_linux_arm64.tar.gz"
+      sha256 "852af3cfe15b741e5c526919c4dbe9722b8ee98c957ea8fe62168109f302585b"
       def install
         bin.install "gsuite"
       end
