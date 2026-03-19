@@ -1,8 +1,8 @@
 class Vocal < Formula
   desc "Local speech recognition, synthesis, and voice cloning"
   homepage "https://github.com/offbeatengineer/vocal"
-  url "https://github.com/offbeatengineer/vocal/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "b6c0c7a07dfa9a3b52c7378a45e8331a3518b0095ddec4e01ea02cd0ebfb6d02"
+  url "https://github.com/offbeatengineer/vocal/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "2aa4a322782aafb3956c9d5c417cfea14ac171ec044657becab8de29e86ed4a6"
   license "MIT"
 
   depends_on "cmake" => :build
