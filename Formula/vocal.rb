@@ -2,7 +2,7 @@ class Vocal < Formula
   desc "Local speech recognition, synthesis, and voice cloning"
   homepage "https://github.com/offbeatengineer/vocal"
   url "https://github.com/offbeatengineer/vocal/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "PLACEHOLDER"
+  sha256 "73bfc139636aafdf753636e05a9ca1ba42e4f07884cf40cb3b847e07fd2f5d3a"
   license "MIT"
 
   depends_on "cmake" => :build
@@ -21,7 +21,7 @@ class Vocal < Formula
     system "cmake", "--build", "third_party/ggml/build", "--parallel"
 
     system "cmake", "-B", "build", "-DCMAKE_BUILD_TYPE=Release",
-           "-DCMAKE_INSTALL_PREFIX=#{prefix}"
+ "-DCMAKE_INSTALL_PREFIX=#{prefix}"
     system "cmake", "--build", "build", "--parallel"
     system "cmake", "--install", "build"
   end
