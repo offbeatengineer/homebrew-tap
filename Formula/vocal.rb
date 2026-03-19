@@ -21,7 +21,8 @@ class Vocal < Formula
     system "cmake", "--build", "third_party/ggml/build", "--parallel"
 
     system "cmake", "-B", "build", "-DCMAKE_BUILD_TYPE=Release",
- "-DCMAKE_INSTALL_PREFIX=#{prefix}"
+           "-DCMAKE_INSTALL_PREFIX=#{prefix}",
+           "-DVOCAL_VERSION=#{version}"
     system "cmake", "--build", "build", "--parallel"
     system "cmake", "--install", "build"
   end
