@@ -5,21 +5,21 @@
 class CcInspector < Formula
   desc "Browse your local Claude Code session history through a polished, private web UI."
   homepage "https://github.com/offbeatengineer/cc-inspector"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/offbeatengineer/cc-inspector/releases/download/v0.1.3/cc-inspector_darwin_amd64.tar.gz"
-      sha256 "8db02fca331c66006cb960d4a12d206b486ccf00060e4ecb869f5fe198f1f3b0"
+      url "https://github.com/offbeatengineer/cc-inspector/releases/download/v0.1.4/cc-inspector_darwin_amd64.tar.gz"
+      sha256 "a72c2ea7d80492a996e8113d3ce76a9ee083e623cb47ba89be53d87adccfe3f8"
 
       define_method(:install) do
         bin.install "cc-inspector"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/offbeatengineer/cc-inspector/releases/download/v0.1.3/cc-inspector_darwin_arm64.tar.gz"
-      sha256 "992f78d22ba2ed20b4452b678e5c94ffa94a8113aa0f0cc873606a4cf177026e"
+      url "https://github.com/offbeatengineer/cc-inspector/releases/download/v0.1.4/cc-inspector_darwin_arm64.tar.gz"
+      sha256 "b0cbca93d614e6dbc8aa7ad90edc49ef3bcd81a45344a2abd55bc76f00880582"
 
       define_method(:install) do
         bin.install "cc-inspector"
@@ -29,15 +29,15 @@ class CcInspector < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/offbeatengineer/cc-inspector/releases/download/v0.1.3/cc-inspector_linux_amd64.tar.gz"
-      sha256 "a239d63eb8c76734ad01d199bd554fb0bfdd9d68e15717a1a29820c77fe930b3"
+      url "https://github.com/offbeatengineer/cc-inspector/releases/download/v0.1.4/cc-inspector_linux_amd64.tar.gz"
+      sha256 "a1671b34a9d343ce05da32937269f3325bdfdd94f71b59cd5a3f058686f6e847"
       define_method(:install) do
         bin.install "cc-inspector"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/offbeatengineer/cc-inspector/releases/download/v0.1.3/cc-inspector_linux_arm64.tar.gz"
-      sha256 "94267984895bcbd3224405ef1dc30820eda058dba2feca0ab6aa77d445752375"
+      url "https://github.com/offbeatengineer/cc-inspector/releases/download/v0.1.4/cc-inspector_linux_arm64.tar.gz"
+      sha256 "f8e587923b8abd6c53959d0f2b004b12c09a2d928f3aeb7bc3bc33ccc8f2bbaa"
       define_method(:install) do
         bin.install "cc-inspector"
       end
